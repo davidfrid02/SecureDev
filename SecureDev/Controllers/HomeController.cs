@@ -22,7 +22,7 @@ namespace Vladi2.Controllers
         public ActionResult Login(string username,string password)
         {
             //the path is absolute and should be changed.
-            var connectionString = string.Format("DataSource={0}", "C:\\Users\\user\\Documents\\Visual Studio 2015\\Projects\\SecureDev\\SecureDev\\Sqlite\\db.sqlite");
+            var connectionString = string.Format("DataSource={0}", @"C:\src\SecureDev\SecureDev\Sqlite\db.sqlite");
 
             using (var m_dbConnection = new SQLiteConnection(connectionString))
             {
